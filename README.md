@@ -1,5 +1,5 @@
-# Radar transformer
-This repo includes base changes from [Radar transformer](https://github.com/aau-cns/radar_transformer/tree/main) and adapted to train and evaluate on sparse Snail 4D radar dataset using STEAM library
+# Hybrid Radar Odometry pipeline
+This repo includes base ideas and changes from [Radar transformer](https://github.com/aau-cns/radar_transformer/tree/main), [HERO](https://github.com/utiasASRL/hero_radar_odometry), [4DRO-Net](https://ieeexplore.ieee.org/document/10237296) and adapted to train and evaluate on sparse [SNAIL](https://snail-radar.github.io/) 4D radar dataset using [STEAM](https://github.com/utiasASRL/steam) probabilistic trajectory estimation library
 
 # Build STEAM library
 ```bash
@@ -50,7 +50,7 @@ evo_rpe tum steam_gt_pred_trajectory.txt steam_pred_trajectory_xyz.txt --align -
 evo_rpe tum steam_gt_pred_trajectory.txt steam_pred_trajectory_xyz.txt --align --correct_scale --delta 1 --delta_unit m -r rot_part --save_results results/rpe_rot_xyz.zip --save_plot results/rpe_rot_xyz.pdf --plot_mode xy
 ```
 
-# Base paper citation
+# Base paper citations
 ```
 @misc{michalczyk2025learningpointcorrespondencesradar,
       title={Learning Point Correspondences In Radar 3D Point Clouds For Radar-Inertial Odometry}, 
@@ -61,4 +61,16 @@ evo_rpe tum steam_gt_pred_trajectory.txt steam_pred_trajectory_xyz.txt --align -
       primaryClass={cs.RO},
       url={https://arxiv.org/abs/2506.18580}, 
 }
+
+@ARTICLE{10237296,
+  author={Lu, Shouyi and Zhuo, Guirong and Xiong, Lu and Zhu, Xichan and Zheng, Lianqing and He, Zihang and Zhou, Mingyu and Lu, Xinfei and Bai, Jie},
+  journal={IEEE Transactions on Intelligent Vehicles}, 
+  title={Efficient Deep-Learning 4D Automotive Radar Odometry Method}, 
+  year={2024},
+  volume={9},
+  number={1},
+  pages={879-892},
+  keywords={Point cloud compression;Radar;Radar cross-sections;Feature extraction;Odometry;Laser radar;Three-dimensional displays;Deep radar odometry;autonomous driving;4D radar},
+  doi={10.1109/TIV.2023.3311102}}
+
 ```
