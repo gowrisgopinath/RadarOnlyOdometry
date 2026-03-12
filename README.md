@@ -1,4 +1,7 @@
 # Hybrid Radar Odometry pipeline
+
+https://github.com/user-attachments/assets/5948a9d8-3654-4549-965d-cce21685aca4
+
 This repo includes base ideas and changes from [Radar transformer](https://github.com/aau-cns/radar_transformer/tree/main), [HERO](https://github.com/utiasASRL/hero_radar_odometry), [4DRO-Net](https://ieeexplore.ieee.org/document/10237296) and adapted to train and evaluate on sparse [SNAIL](https://snail-radar.github.io/) 4D radar dataset using [STEAM](https://github.com/utiasASRL/steam) probabilistic trajectory estimation library
 
 # Build STEAM library
